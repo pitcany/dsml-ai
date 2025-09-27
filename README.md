@@ -25,6 +25,16 @@ import dsml_ai
 print(dsml_ai.hello())
 ```
 
+## Modular Structure
+
+The package provides modules for different areas:
+
+- `dsml_ai.core`: Core utilities for data processing.
+- `dsml_ai.viz`: Visualization utilities.
+- `dsml_ai.dl`: Deep learning utilities.
+- `dsml_ai.bayes`: Bayesian modeling utilities.
+- `dsml_ai.time`: Time series analysis utilities.
+
 ## Running tests
 
 ```bash
