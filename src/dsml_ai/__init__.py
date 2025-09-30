@@ -11,6 +11,8 @@ from .bayes import *
 from .bayes import __all__ as _bayes_all
 from .time import *
 from .time import __all__ as _time_all
+from .stats import *
+from .stats import __all__ as _stats_all
 
 __all__ = (
     ["__version__", "hello"]
@@ -19,6 +21,7 @@ __all__ = (
     + _dl_all
     + _bayes_all
     + _time_all
+    + _stats_all
 )
 
 def hello() -> str:

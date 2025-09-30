@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Heavy-duty data science and ML workflows"
 authors = ["Yannik Pitcan <pitcany@gmail.com>"]
 readme = "README.md"
-packages = [{ include = "src" }]
+packages = [{ include = "dsml_ai", from = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -15,9 +15,9 @@ pydantic = "^2.8"
 numpy = "^1.26"
 pandas = "^2.2"
 scipy = "^1.14"
+scikit-learn = "^1.5"
 
 [tool.poetry.group.ml.dependencies]
-scikit-learn = "^1.5"
 torch = "*"
 torchvision = "*"
 torchaudio = "*"
@@ -40,7 +40,7 @@ loguru = "^0.7"
 structlog = "^24.1"
 
 [tool.poetry.group.notebooks.dependencies]
-jupyterlab = "^4.5"
+jupyterlab = "^4.4"
 notebook = "^7.0"
 ipywidgets = "^8.0"
 ipython = "^8.0"
