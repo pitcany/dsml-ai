@@ -1,0 +1,48 @@
+name: dsml
+channels:
+  - nvidia
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.13
+  - pip
+  # Core scientific stack
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - numba
+  - tqdm
+  - pyyaml
+  # Plotting
+  - matplotlib
+  - seaborn
+  # Jupyter
+  - jupyterlab
+  - notebook
+  - ipywidgets
+  # PyTorch GPU (Linux) and CUDA runtime
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.4  # Linux GPU (NVIDIA channel)
+  # GBM / Tree models
+  - xgboost
+  - catboost
+  - lightgbm
+  # Dev tools
+  - black
+  - isort
+  - ruff
+  - mypy
+  - pytest
+  - pre-commit
+  - mlflow
+  - pip:
+      - hydra-core
+      - pydantic
+      - loguru
+      - structlog
+      - wandb
+      - nbstripout
+      - 'mlx; platform_system == "Darwin" and platform_machine == "arm64"'  # Mac only

@@ -1,6 +1,45 @@
+# Python
 __pycache__/
-*.py[cod]
-.venv/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+*.log
+
+# Environments
 .env
+.venv
+env/
+venv/
+.dsml/
+conda-meta/
+.envrc
+
+# Notebooks
 .ipynb_checkpoints/
-.virtual_documents/
+
+# Data / Models / Experiments
+data/
+models/
+experiments/
+logs/
+reports/
+
+# IDE / Editors
+.vscode/
+.idea/
+*.swp
+
+# Jupyter
+.jupyter/
+
+# CI / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Mac / System
+.DS_Store
+Thumbs.db

@@ -1,0 +1,10 @@
+channels:
+  - conda-forge
+  - defaults
+channel_priority: strict
+auto_activate_base: false
+show_channel_urls: true
+repodata_fns:
+  - current_repodata.json
+  - repodata.json
+solver: libmamba
